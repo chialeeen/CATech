@@ -1,38 +1,47 @@
+/* App.css */
+
+/* 1. Global Application Container */
 .App {
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 2. Unified Button Styling - Used in Home and Products */
+.explore-button, .home-button {
+    padding: 15px 45px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #7952B3; /* Your signature purple */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    /* Smooth "Pop-up" transition */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.explore-button:hover, .home-button:hover {
+    background-color: #9067c6;
+    transform: translateY(-5px); /* Interactive lift effect */
+    box-shadow: 0 12px 25px rgba(121, 82, 179, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 3. Helper class for elegant white-background sections */
+.section-white {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 4. Global Typography for CATech brand */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }

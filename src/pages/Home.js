@@ -1,28 +1,51 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Home.css';
 
 function Home() {
-    const navigate = useNavigate(); // Used to redirect to products
+    const navigate = useNavigate();
+
+    const backgroundLayer = {
+        /* This forces the image to cover every pixel without moving */
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        zIndex: -1,
+        backgroundImage: 'linear-gradient(rgba(45, 13, 82, 0.6), rgba(20, 5, 40, 0.8)), url("/background.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
+    const contentLayer = {
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'white',
+        textAlign: 'center'
+    };
 
     return (
-        <div style={{
-            backgroundImage: 'url("/smart-home-bg.jpg")', // Put your image in the public folder
-            backgroundSize: 'cover',
-            height: '80vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: 'white'
-        }}>
-            <h1 style={{ fontSize: '3rem', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>CATech</h1>
-            <p style={{ fontSize: '1.5rem' }}>Smart Life, Better Home</p>
-            <button
-                onClick={() => navigate('/products')}
-                style={{ padding: '15px 30px', fontSize: '1.2rem', cursor: 'pointer', backgroundColor: '#6200ea', color: 'white', border: 'none', borderRadius: '5px' }}
-            >
-                Explore Our Products
-            </button>
+        <div style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
+            {/* 1. The Background (Glued to edges) */}
+            <div style={backgroundLayer} />
+
+            {/* 2. Your Content */}
+            <div style={contentLayer}>
+                <h1 className="home-title fade-in-title">CATech</h1>
+                <p className="home-tagline fade-in-tagline">Smart Life, Better Home</p>
+                <button
+                    className="home-button fade-in-button"
+                    onClick={() => navigate('/products')}
+                >
+                    Explore Our Products
+                </button>
+            </div>
         </div>
     );
 }

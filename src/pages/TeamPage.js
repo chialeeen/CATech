@@ -1,28 +1,62 @@
 import React from 'react';
+import './TeamPage.css';
 
 const teamMembers = [
-    { name: 'Member 1', position: 'CEO', description: 'Leads strategy and content.', img: 'https://via.placeholder.com/150' },
-    { name: 'Member 2', position: 'CMO', description: 'Responsible for brand and design.', img: 'https://via.placeholder.com/150' },
-    { name: 'Member 3', position: 'CTO', description: 'Lead technical developer.', img: 'https://via.placeholder.com/150' },
-    { name: 'Member 4', position: 'COO', description: 'Manages operations and deployment.', img: 'https://via.placeholder.com/150' }
+    {
+        name: "CHIA LEE EN",
+        abbreviation: "CEO",
+        role: "Vision and Strategy",
+        description: "Sets the company's overall direction and defines the mission. Manages external relations.",
+        image: "/teampic/CHIA LEE EN.jpg"
+    },
+    {
+        name: "OOI WAN TING",
+        abbreviation: "CTO",
+        role: "Tech & Development",
+        description: "Oversees R&D strategy. Ensures use of appropriate tech like React.js and Node.js.",
+        image: "/teampic/OOI WAN TING.jpg"
+    },
+    {
+        name: "LING XIN QI",
+        abbreviation: "CMO",
+        role: "Customers & Brand",
+        description: "Oversees marketing and branding. Responsible for attracting leads and business visibility.",
+        image: "/teampic/LING XIN QI.JPG"
+    },
+    {
+        name: "CHENG XIN YI",
+        abbreviation: "COO",
+        role: "Day-to-Day Operations",
+        description: "Manages internal processes. Ensures projects are delivered efficiently and on time.",
+        image: "/teampic/CHENG XIN YI.jpg"
+    }
 ];
 
-function Team() {
+function TeamPage() {
     return (
-        <section id="team" style={{ padding: '2rem' }}>
-            <h2 style={{ textAlign: 'center' }}>Our Founders</h2>
-            <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+        <div className="team-container">
+            <header className="team-header">
+                <h1 className="gradient-title">Our Founders</h1>
+                <p className="team-tagline">Leadership for a Smarter Future</p>
+            </header>
+
+            <div className="team-grid">
                 {teamMembers.map((member, index) => (
-                    <div key={index} style={{ textAlign: 'center', margin: '1rem', maxWidth: '200px' }}>
-                        <img src={member.img} alt={member.name} style={{ borderRadius: '50%', width: '100px' }} />
-                        <h3>{member.name}</h3>
-                        <p><strong>{member.position}</strong></p>
-                        <p>{member.description}</p>
+                    <div key={index} className="team-card">
+                        <div className="member-image-box">
+                            <img src={member.image} alt={member.name} />
+                        </div>
+                        <div className="member-info-box">
+                            <span className="badge">{member.abbreviation}</span>
+                            <h2 className="member-name">{member.name}</h2>
+                            <h3 className="member-core-role">{member.role}</h3>
+                            <p className="member-desc">{member.description}</p>
+                        </div>
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
 
-export default Team;
+export default TeamPage;
