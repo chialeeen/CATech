@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Aura SecureTouch Pro",
+    "category": "Security",
+    "sub_category": "Access Control",
+    "price_rm": 2499,
+    "description": "Security at a glance. Experience the future of entry with military-grade 3D biometric scanning. Aura eliminates the hassle of keys, granting instant and ultra-fast access with a single touch while ensuring your home remains an impenetrable fortress against unauthorized entry."
+  },
+  {
+    "id": 2,
+    "name": "Vision360 Panoramic Guard",
+    "category": "Security",
+    "sub_category": "Surveillance",
+    "price_rm": 1299,
+    "description": "Total visual awareness. Eliminate every blind spot with crystal-clear 4K surveillance that spans your entire horizon. Powered by intelligent detection, Vision360 differentiates between everyday movement and potential intruders, providing filtered and relevant alerts for complete peace of mind."
+  },
+  {
+    "id": 3,
+    "name": "SafeHaven Voice Protect",
+    "category": "Security",
+    "sub_category": "Alarm System",
+    "price_rm": 599,
+    "description": "A voice of safety. SafeHaven does more than sound an alarm; it communicates with a calm and clear human voice. It pinpoints the exact location of danger by room while simultaneously broadcasting emergency alerts to your devices wherever you are."
+  },
+  {
+    "id": 4,
+    "name": "Frontier 2K Vision",
+    "category": "Security",
+    "sub_category": "Smart Doorbell",
+    "price_rm": 899,
+    "description": "Your doorstep, reimagined. Greet the world from anywhere with professional-grade 2K clarity and lag-free two-way audio. Frontier ensures you are always home to receive packages or welcome visitors through a secure connection to your smartphone."
+  },
+  {
+    "id": 5,
+    "name": "Aura Keyless Elite",
+    "category": "Security",
+    "sub_category": "Access Control",
+    "price_rm": 1799,
+    "description": "Master your entry. Transition seamlessly between a precision backlit keypad and smartphone access, protected by bank-level encryption to secure your home’s most vital access point."
+  },
+  {
+    "id": 6,
+    "name": "Lumina Circadian",
+    "category": "Lifestyle",
+    "sub_category": "Smart Lighting",
+    "price_rm": 499,
+    "description": "Master your morning. Lumina mimics the natural progression of the sun, transitioning from warm amber light to crisp daylight. By syncing your indoor lighting with your body’s internal clock, it promotes restorative sleep and energized mornings."
+  },
+  {
+    "id": 7,
+    "name": "ChefBot Scale",
+    "category": "Lifestyle",
+    "sub_category": "Smart Kitchen",
+    "price_rm": 349,
+    "description": "Your personal sous-chef. Simply place ingredients on the ChefBot Scale and its AI-driven system instantly calculates weight and recommends recipes based on what you have available, making precision cooking and meal planning effortless."
+  },
+  {
+    "id": 8,
+    "name": "VocaMirror",
+    "category": "Lifestyle",
+    "sub_category": "Smart Display",
+    "price_rm": 2199,
+    "description": "Reflect your potential. More than a mirror, VocaMirror acts as a daily command center by displaying personalized health metrics, schedules, and live weather updates on a high-definition interface that disappears when not in use."
+  },
+  {
+    "id": 9,
+    "name": "SleepMetrics Pad",
+    "category": "Lifestyle",
+    "sub_category": "Health Monitoring",
+    "price_rm": 1499,
+    "description": "Invisible insight. This ultra-thin pad fits under your mattress to monitor heart rate, breathing, and sleep cycles with lab-grade precision. Users receive a comprehensive sleep score and actionable insights without wearing any devices."
+  },
+  {
+    "id": 10,
+    "name": "SetLink Smart Feeder",
+    "category": "Lifestyle",
+    "sub_category": "Pet Care",
+    "price_rm": 749,
+    "description": "Smart nutrition tailored for every pet. SetLink uses intelligent recognition technology to identify individual pets, dispense precise portions, track consumption habits, and automatically update grocery lists through the CATech app."
+  },
+  {
+    "id": 11,
+    "name": "SolarOptimist AI",
+    "category": "Energy",
+    "sub_category": "Solar Management",
+    "price_rm": 4500,
+    "description": "Energy independence mastered. SolarOptimist synchronizes with live weather forecasts and historical household usage to predict energy generation and intelligently manage battery reserves, ensuring optimal use of clean solar power."
+  },
+  {
+    "id": 12,
+    "name": "Aura Humidity Guard",
+    "category": "Energy",
+    "sub_category": "Environment Monitoring",
+    "price_rm": 249,
+    "description": "Preserve your home’s health. Aura Humidity Guard monitors indoor moisture levels and detects subtle changes that may lead to mold or mildew, protecting both structural integrity and respiratory health."
+  },
+  {
+    "id": 13,
+    "name": "PureAir Sentinel",
+    "category": "Energy",
+    "sub_category": "Air Quality",
+    "price_rm": 1199,
+    "description": "Breathe the difference. PureAir Sentinel continuously analyzes airborne particles such as dust, pollen, and rising CO2 levels, delivering real-time insights and alerts to maintain a clean and healthy indoor environment."
+  },
+  {
+    "id": 14,
+    "name": "OmniTemp Zone Valve",
+    "category": "Energy",
+    "sub_category": "Climate Control",
+    "price_rm": 359,
+    "description": "Precision comfort room by room. OmniTemp enables independent temperature scheduling for different rooms, reducing energy waste while maintaining optimal comfort throughout the home."
+  },
+  {
+    "id": 15,
+    "name": "ThermalTint Adaptive Glass",
+    "category": "Energy",
+    "sub_category": "Smart Windows",
+    "price_rm": 2999,
+    "description": "Intelligence you can see. ThermalTint adaptive glass analyzes sunlight and heat levels to automatically adjust opacity, blocking harmful UV rays and reducing indoor temperatures while coordinating with smart thermostats."
+  },
+  {
+    "id": 16,
+    "name": "EcoFlow Thermostat",
+    "category": "Appliances",
+    "sub_category": "Climate Control",
+    "price_rm": 899,
+    "description": "Comfort that learns you. EcoFlow analyzes daily routines and sleep patterns to anticipate temperature preferences, automatically adjusting settings to maximize comfort while minimizing energy consumption."
+  },
+  {
+    "id": 17,
+    "name": "SmartGrid Plug",
+    "category": "Appliances",
+    "sub_category": "Energy Monitoring",
+    "price_rm": 129,
+    "description": "Expose energy vampires. SmartGrid Plug provides real-time monitoring of appliance power usage, enabling scheduling and optimization to reduce unnecessary energy waste."
+  },
+  {
+    "id": 18,
+    "name": "Zenith RoboVac Pro",
+    "category": "Appliances",
+    "sub_category": "Cleaning",
+    "price_rm": 3299,
+    "description": "Flawless floors with zero effort. Zenith RoboVac Pro uses precision laser mapping to navigate your home efficiently and automatically empties its dustbin into a self-contained dock for hands-free maintenance."
+  },
+  {
+    "id": 19,
+    "name": "OmniVault Smart Hub",
+    "category": "Appliances",
+    "sub_category": "Smart Kitchen",
+    "price_rm": 8799,
+    "description": "The heart of your intelligent kitchen. OmniVault tracks food inventory using internal AI vision, sends expiration alerts, and suggests healthy recipes to reduce waste and improve household nutrition."
+  },
+  {
+    "id": 20,
+    "name": "SenseLoad Washer",
+    "category": "Appliances",
+    "sub_category": "Laundry",
+    "price_rm": 4299,
+    "description": "Precision cleaning for every fabric. SenseLoad detects laundry load size and fabric type to dispense the exact amount of detergent required, delivering professional-grade cleaning while conserving water and energy."
+  }
+]
