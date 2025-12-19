@@ -1,30 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // Added hooks
 import './Products.css';
 
 function Products() {
-    const products = [
-        {
-            id: 1,
-            name: "Sejahtera Smart Hub",
-            description: "The brain of your smart home. Connects all devices seamlessly.",
-            price: "RM 399",
-            image: "https://via.placeholder.com/200"
-        },
-        {
-            id: 2,
-            name: "Sains Eco-Sensor",
-            description: "Intelligent climate control that saves energy while you sleep.",
-            price: "RM 149",
-            image: "https://via.placeholder.com/200"
-        },
-        {
-            id: 3,
-            name: "Harmony Home Camera",
-            description: "AI-powered security that recognizes your family and pets.",
-            price: "RM 299",
-            image: "https://via.placeholder.com/200"
-        }
-    ];
+    // 1. Create a state to hold the data
+    const [products, setProducts] = useState([]);
+
+    // 2. Load the data from the public folder when the page opens
+    useEffect(() => {
+        fetch('/product.json') // Looks directly into the public folder
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Failed to load product data');
+                }
+                return response.json();
+            })
+            .then((data) => setProducts(data)) // Save the JSON data into our state
+            .catch((error) => console.error('Error:', error));
+    }, []);
 
     return (
         <div className="products-container">
@@ -34,17 +26,22 @@ function Products() {
             </p>
 
             <div className="products-grid">
-                {products.map(product => (
-                    <div key={product.id} className="product-card">
-                        <img src={product.image} alt={product.name} className="product-image" />
-                        <h3>{product.name}</h3>
-                        <p className="product-desc">{product.description}</p>
-                        <p className="product-price">{product.price}</p>
-                        <button className="product-button">
-                            View Details
-                        </button>
-                    </div>
-                ))}
+                {/* 3. If the data is still loading, show a message */}
+                {products.length === 0 ? (
+                    <p>Loading products...</p>
+                ) : (
+                    products.map(product => (
+                        <div key={product.id} className="product-card">
+                            <img src={product.image} alt={product.name} className="product-image" />
+                            <h3>{product.name}</h3>
+                            <p className="product-desc">{product.description}</p>
+                            <p className="product-price">{product.price}</p>
+                            <button className="product-button">
+                                View Details
+                            </button>
+                        </div>
+                    ))
+                )}
             </div>
         </div>
     );
