@@ -1,5 +1,5 @@
 .team-container {
-    background-color: #ffffff; /* White background for the page */
+    background-color: #fcfaff; /* Lavender White background for the page */
     min-height: 100vh;
     padding: 60px 10px; /* Reduced side padding to help 4-fit */
     font-family: 'Montserrat', sans-serif;
@@ -69,7 +69,8 @@
 .member-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: top;
+    object-fit: cover;
+    object-position: top;
     transition: transform 0.5s ease;
 }
 

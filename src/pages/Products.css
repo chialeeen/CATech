@@ -1,0 +1,72 @@
+.products-container {
+    background-color: #fcfaff; /* Subtle lavender-tinted white */
+    min-height: 60vh;          /* Matches your preference to keep footer visible */
+    padding: 40px 5%;
+    box-sizing: border-box;
+}
+
+.products-title {
+    text-align: center;
+    color: #6200ea;
+    margin-top: 0;
+}
+
+.products-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* The Grid Layout */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Card Styling */
+.product-card {
+    background-color: #ffffff; /* White cards pop against the lavender bg */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover for better GUI feedback */
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-desc {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #6200ea;
+    font-size: 1.2rem;
+}
+
+/* Product Button Styling */
+.product-button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.product-button:hover {
+    background-color: #4b00b2;
+}

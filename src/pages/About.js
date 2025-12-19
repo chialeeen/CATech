@@ -1,16 +1,17 @@
 import React from 'react';
+import './About.css';
 
 function About() {
     return (
-        <div style={{ padding: '40px', textAlign: 'center' }}>
+        <div className="about-container">
             <h2>About CATech</h2>
-            <div style={{ margin: '20px 0' }}>
+            <div className="about-content-section">
                 <h3>Our Mission</h3>
-                <p>Write later</p>
+                <p>To empower every Malaysian home with affordable, intelligent IoT solutions that simplify daily life.</p>
             </div>
-            <div style={{ margin: '20px 0' }}>
+            <div className="about-content-section">
                 <h3>Our Vision</h3>
-                <p>Write later</p>
+                <p>To be the leading innovator in smart home technology within Southeast Asia by 2030.</p>
             </div>
         </div>
     );

@@ -39,6 +39,17 @@ function Home() {
             <div style={contentLayer}>
                 <h1 className="home-title fade-in-title">CATech</h1>
                 <p className="home-tagline fade-in-tagline">Smart Life, Better Home</p>
+
+                {/* Video Placeholder */}
+                <div className="fade-in-button" style={{ margin: '20px 0' }}>
+                    <iframe
+                        width="350"
+                        height="200"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="CATech Promo Placeholder"
+                        style={{ borderRadius: '12px', border: '2px solid #9d72ff' }}
+                    />
+                </div>
                 <button
                     className="home-button fade-in-button"
                     onClick={() => navigate('/products')}

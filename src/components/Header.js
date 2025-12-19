@@ -41,7 +41,7 @@ function Header() {
                 CATech
             </Link>
 
-            <div style={navLinksStyle}>
+            <div className="nav-links-container" style={navLinksStyle}>
                 <Link to="/" style={linkStyle}>Home</Link>
                 <Link to="/products" style={linkStyle}>Products</Link>
                 <Link to="/about" style={linkStyle}>About</Link>

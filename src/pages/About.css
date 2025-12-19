@@ -1,0 +1,23 @@
+.about-container {
+    /* Your new background color */
+    background-color: #fcfaff;
+
+    /* Original Sizing */
+    padding: 40px;
+    text-align: center;
+
+    /* Ensures the background fills the screen if content is short */
+    min-height: 60vh;
+    box-sizing: border-box;
+}
+
+.about-content-section {
+    /* Original Sizing */
+    margin: 20px 0;
+}
+
+/* Keeps headers looking consistent with your original default sizes */
+.about-container h2 {
+    margin-top: 0;
+    color: #6200ea; /* Optional: CATech Purple */
+}
