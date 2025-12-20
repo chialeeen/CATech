@@ -1,162 +1,143 @@
 [
   {
-    "id": 1,
-    "name": "Aura SecureTouch Pro",
-    "category": "Security",
-    "sub_category": "Access Control",
+    "product_id": "P001",
+    "product_name": "Aura SecureTouch Pro",
+    "category": "Security & Access Control",
     "price_rm": 2499,
-    "description": "Security at a glance. Experience the future of entry with military-grade 3D biometric scanning. Aura eliminates the hassle of keys, granting instant and ultra-fast access with a single touch while ensuring your home remains an impenetrable fortress against unauthorized entry."
+    "description": "Aura SecureTouch Pro is a keyless smart door lock that uses advanced 3D biometric scanning to provide fast and secure access. It removes the need for physical keys while offering strong protection against unauthorized entry, making it ideal for modern smart homes."
   },
   {
-    "id": 2,
-    "name": "Vision360 Panoramic Guard",
-    "category": "Security",
-    "sub_category": "Surveillance",
+    "product_id": "P002",
+    "product_name": "Vision360 Panoramic Guard",
+    "category": "Security & Access Control",
     "price_rm": 1299,
-    "description": "Total visual awareness. Eliminate every blind spot with crystal-clear 4K surveillance that spans your entire horizon. Powered by intelligent detection, Vision360 differentiates between everyday movement and potential intruders, providing filtered and relevant alerts for complete peace of mind."
+    "description": "Vision360 Panoramic Guard delivers 4K panoramic surveillance coverage to eliminate blind spots around your home. With intelligent detection, it can distinguish between pets and real threats, sending only relevant alerts for improved peace of mind."
   },
   {
-    "id": 3,
-    "name": "SafeHaven Voice Protect",
-    "category": "Security",
-    "sub_category": "Alarm System",
+    "product_id": "P003",
+    "product_name": "SafeHaven Voice Protect",
+    "category": "Security & Access Control",
     "price_rm": 599,
-    "description": "A voice of safety. SafeHaven does more than sound an alarm; it communicates with a calm and clear human voice. It pinpoints the exact location of danger by room while simultaneously broadcasting emergency alerts to your devices wherever you are."
+    "description": "SafeHaven Voice Protect is a smart alarm system that provides voice-guided alerts during emergencies. It identifies the location of danger by room and sends instant notifications to connected devices, ensuring timely responses even when you are away."
   },
   {
-    "id": 4,
-    "name": "Frontier 2K Vision",
-    "category": "Security",
-    "sub_category": "Smart Doorbell",
+    "product_id": "P004",
+    "product_name": "Frontier 2K Vision",
+    "category": "Security & Access Control",
     "price_rm": 899,
-    "description": "Your doorstep, reimagined. Greet the world from anywhere with professional-grade 2K clarity and lag-free two-way audio. Frontier ensures you are always home to receive packages or welcome visitors through a secure connection to your smartphone."
+    "description": "Frontier 2K Vision is a smart video doorbell featuring high-resolution video and two-way audio. It allows homeowners to monitor visitors, receive packages, and communicate remotely through a mobile device with minimal delay."
   },
   {
-    "id": 5,
-    "name": "Aura Keyless Elite",
-    "category": "Security",
-    "sub_category": "Access Control",
+    "product_id": "P005",
+    "product_name": "Aura Keyless Elite",
+    "category": "Security & Access Control",
     "price_rm": 1799,
-    "description": "Master your entry. Transition seamlessly between a precision backlit keypad and smartphone access, protected by bank-level encryption to secure your home’s most vital access point."
+    "description": "Aura Keyless Elite combines a backlit keypad and smartphone access for flexible entry control. It uses strong encryption technology to protect access points, providing a reliable and secure alternative to traditional locks."
   },
   {
-    "id": 6,
-    "name": "Lumina Circadian",
+    "product_id": "P006",
+    "product_name": "Lumina Circadian",
     "category": "Lifestyle",
-    "sub_category": "Smart Lighting",
     "price_rm": 499,
-    "description": "Master your morning. Lumina mimics the natural progression of the sun, transitioning from warm amber light to crisp daylight. By syncing your indoor lighting with your body’s internal clock, it promotes restorative sleep and energized mornings."
+    "description": "Lumina Circadian is a smart lighting system designed to mimic natural daylight cycles. By adjusting brightness and color temperature throughout the day, it supports better sleep patterns and helps users wake up feeling refreshed."
   },
   {
-    "id": 7,
-    "name": "ChefBot Scale",
+    "product_id": "P007",
+    "product_name": "ChefBot Scale",
     "category": "Lifestyle",
-    "sub_category": "Smart Kitchen",
     "price_rm": 349,
-    "description": "Your personal sous-chef. Simply place ingredients on the ChefBot Scale and its AI-driven system instantly calculates weight and recommends recipes based on what you have available, making precision cooking and meal planning effortless."
+    "description": "ChefBot Scale is an AI-powered kitchen scale that measures ingredient weight and suggests recipes based on available items. It simplifies meal planning and improves cooking accuracy for both beginners and experienced users."
   },
   {
-    "id": 8,
-    "name": "VocaMirror",
+    "product_id": "P008",
+    "product_name": "VocaMirror",
     "category": "Lifestyle",
-    "sub_category": "Smart Display",
     "price_rm": 2199,
-    "description": "Reflect your potential. More than a mirror, VocaMirror acts as a daily command center by displaying personalized health metrics, schedules, and live weather updates on a high-definition interface that disappears when not in use."
+    "description": "VocaMirror is a smart mirror that displays daily schedules, weather updates, and health information while in use. Its sleek display disappears when turned off, blending seamlessly into modern living spaces."
   },
   {
-    "id": 9,
-    "name": "SleepMetrics Pad",
+    "product_id": "P009",
+    "product_name": "SleepMetrics Pad",
     "category": "Lifestyle",
-    "sub_category": "Health Monitoring",
     "price_rm": 1499,
-    "description": "Invisible insight. This ultra-thin pad fits under your mattress to monitor heart rate, breathing, and sleep cycles with lab-grade precision. Users receive a comprehensive sleep score and actionable insights without wearing any devices."
+    "description": "SleepMetrics Pad is a thin, non-intrusive sleep monitoring device placed under the mattress. It tracks sleep cycles, heart rate, and breathing patterns, providing detailed sleep reports without requiring wearable devices."
   },
   {
-    "id": 10,
-    "name": "SetLink Smart Feeder",
+    "product_id": "P010",
+    "product_name": "SetLink Smart Feeder",
     "category": "Lifestyle",
-    "sub_category": "Pet Care",
     "price_rm": 749,
-    "description": "Smart nutrition tailored for every pet. SetLink uses intelligent recognition technology to identify individual pets, dispense precise portions, track consumption habits, and automatically update grocery lists through the CATech app."
+    "description": "SetLink Smart Feeder uses AI recognition to identify individual pets and dispense precise food portions. It tracks feeding habits, supports multi-pet households, and helps pet owners manage nutrition efficiently."
   },
   {
-    "id": 11,
-    "name": "SolarOptimist AI",
-    "category": "Energy",
-    "sub_category": "Solar Management",
+    "product_id": "P011",
+    "product_name": "SolarOptimist AI",
+    "category": "Energy & Environment",
     "price_rm": 4500,
-    "description": "Energy independence mastered. SolarOptimist synchronizes with live weather forecasts and historical household usage to predict energy generation and intelligently manage battery reserves, ensuring optimal use of clean solar power."
+    "description": "SolarOptimist AI is an intelligent solar energy management system that predicts energy production and household usage. By integrating weather data and usage patterns, it optimizes battery storage and improves energy independence."
   },
   {
-    "id": 12,
-    "name": "Aura Humidity Guard",
-    "category": "Energy",
-    "sub_category": "Environment Monitoring",
+    "product_id": "P012",
+    "product_name": "Aura Humidity Guard",
+    "category": "Energy & Environment",
     "price_rm": 249,
-    "description": "Preserve your home’s health. Aura Humidity Guard monitors indoor moisture levels and detects subtle changes that may lead to mold or mildew, protecting both structural integrity and respiratory health."
+    "description": "Aura Humidity Guard monitors indoor moisture levels to help prevent mold and mildew growth. It provides early alerts when humidity rises, protecting both home structure and indoor air quality."
   },
   {
-    "id": 13,
-    "name": "PureAir Sentinel",
-    "category": "Energy",
-    "sub_category": "Air Quality",
+    "product_id": "P013",
+    "product_name": "PureAir Sentinel",
+    "category": "Energy & Environment",
     "price_rm": 1199,
-    "description": "Breathe the difference. PureAir Sentinel continuously analyzes airborne particles such as dust, pollen, and rising CO2 levels, delivering real-time insights and alerts to maintain a clean and healthy indoor environment."
+    "description": "PureAir Sentinel continuously monitors air quality by detecting dust, pollen, and carbon dioxide levels. It delivers real-time insights and alerts to help maintain a healthier indoor environment."
   },
   {
-    "id": 14,
-    "name": "OmniTemp Zone Valve",
-    "category": "Energy",
-    "sub_category": "Climate Control",
+    "product_id": "P014",
+    "product_name": "OmniTemp Zone Valve",
+    "category": "Energy & Environment",
     "price_rm": 359,
-    "description": "Precision comfort room by room. OmniTemp enables independent temperature scheduling for different rooms, reducing energy waste while maintaining optimal comfort throughout the home."
+    "description": "OmniTemp Zone Valve enables room-by-room temperature control for improved comfort and energy efficiency. Users can schedule different temperatures for each area, reducing energy waste in unused spaces."
   },
   {
-    "id": 15,
-    "name": "ThermalTint Adaptive Glass",
-    "category": "Energy",
-    "sub_category": "Smart Windows",
+    "product_id": "P015",
+    "product_name": "ThermalTint Adaptive Glass",
+    "category": "Energy & Environment",
     "price_rm": 2999,
-    "description": "Intelligence you can see. ThermalTint adaptive glass analyzes sunlight and heat levels to automatically adjust opacity, blocking harmful UV rays and reducing indoor temperatures while coordinating with smart thermostats."
+    "description": "ThermalTint Adaptive Glass automatically adjusts window opacity based on sunlight and heat levels. It blocks UV rays, reduces indoor temperature, and integrates with smart climate systems to enhance energy efficiency."
   },
   {
-    "id": 16,
-    "name": "EcoFlow Thermostat",
+    "product_id": "P016",
+    "product_name": "EcoFlow Thermostat",
     "category": "Appliances",
-    "sub_category": "Climate Control",
     "price_rm": 899,
-    "description": "Comfort that learns you. EcoFlow analyzes daily routines and sleep patterns to anticipate temperature preferences, automatically adjusting settings to maximize comfort while minimizing energy consumption."
+    "description": "EcoFlow Thermostat learns user routines to automatically adjust indoor temperatures. It balances comfort and energy savings by optimizing cooling and heating based on daily activity patterns."
   },
   {
-    "id": 17,
-    "name": "SmartGrid Plug",
+    "product_id": "P017",
+    "product_name": "SmartGrid Plug",
     "category": "Appliances",
-    "sub_category": "Energy Monitoring",
     "price_rm": 129,
-    "description": "Expose energy vampires. SmartGrid Plug provides real-time monitoring of appliance power usage, enabling scheduling and optimization to reduce unnecessary energy waste."
+    "description": "SmartGrid Plug converts standard power outlets into smart monitoring points. It tracks real-time energy consumption, helping users identify power-hungry devices and reduce electricity waste."
   },
   {
-    "id": 18,
-    "name": "Zenith RoboVac Pro",
+    "product_id": "P018",
+    "product_name": "Zenith RoboVac Pro",
     "category": "Appliances",
-    "sub_category": "Cleaning",
     "price_rm": 3299,
-    "description": "Flawless floors with zero effort. Zenith RoboVac Pro uses precision laser mapping to navigate your home efficiently and automatically empties its dustbin into a self-contained dock for hands-free maintenance."
+    "description": "Zenith RoboVac Pro is an autonomous robot vacuum equipped with laser mapping technology. It cleans efficiently and empties its dustbin automatically, minimizing manual maintenance."
   },
   {
-    "id": 19,
-    "name": "OmniVault Smart Hub",
+    "product_id": "P019",
+    "product_name": "OmniVault Smart Hub",
     "category": "Appliances",
-    "sub_category": "Smart Kitchen",
     "price_rm": 8799,
-    "description": "The heart of your intelligent kitchen. OmniVault tracks food inventory using internal AI vision, sends expiration alerts, and suggests healthy recipes to reduce waste and improve household nutrition."
+    "description": "OmniVault Smart Hub is a smart refrigerator system with internal vision technology that tracks stored food. It sends expiration alerts and suggests recipes to reduce waste and improve meal planning."
   },
   {
-    "id": 20,
-    "name": "SenseLoad Washer",
+    "product_id": "P020",
+    "product_name": "SenseLoad Washer",
     "category": "Appliances",
-    "sub_category": "Laundry",
     "price_rm": 4299,
-    "description": "Precision cleaning for every fabric. SenseLoad detects laundry load size and fabric type to dispense the exact amount of detergent required, delivering professional-grade cleaning while conserving water and energy."
+    "description": "SenseLoad Washer automatically detects laundry load size and fabric type to optimize water and detergent usage. It delivers efficient cleaning while conserving energy and extending fabric lifespan."
   }
 ]
+
