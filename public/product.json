@@ -2,141 +2,161 @@
   {
     "product_id": "P001",
     "product_name": "Aura SecureTouch Pro",
+    "image": "SecureTouch.jpg",
     "category": "Security & Access Control",
-    "price_rm": 2499,
+    "price_rm": "RM 2499",
     "description": "Aura SecureTouch Pro is a keyless smart door lock that uses advanced 3D biometric scanning to provide fast and secure access. It removes the need for physical keys while offering strong protection against unauthorized entry, making it ideal for modern smart homes."
   },
   {
     "product_id": "P002",
     "product_name": "Vision360 Panoramic Guard",
+    "image": "guard.jpg",
     "category": "Security & Access Control",
-    "price_rm": 1299,
+    "price_rm": "RM 1299",
     "description": "Vision360 Panoramic Guard delivers 4K panoramic surveillance coverage to eliminate blind spots around your home. With intelligent detection, it can distinguish between pets and real threats, sending only relevant alerts for improved peace of mind."
   },
   {
     "product_id": "P003",
     "product_name": "SafeHaven Voice Protect",
+    "image": "voice.jpg",
     "category": "Security & Access Control",
-    "price_rm": 599,
+    "price_rm": "RM 599",
     "description": "SafeHaven Voice Protect is a smart alarm system that provides voice-guided alerts during emergencies. It identifies the location of danger by room and sends instant notifications to connected devices, ensuring timely responses even when you are away."
   },
   {
     "product_id": "P004",
     "product_name": "Frontier 2K Vision",
+    "image": "Frontier.png",
     "category": "Security & Access Control",
-    "price_rm": 899,
+    "price_rm": "RM 899",
     "description": "Frontier 2K Vision is a smart video doorbell featuring high-resolution video and two-way audio. It allows homeowners to monitor visitors, receive packages, and communicate remotely through a mobile device with minimal delay."
   },
   {
     "product_id": "P005",
     "product_name": "Aura Keyless Elite",
+    "image": "keyless.jpg",
     "category": "Security & Access Control",
-    "price_rm": 1799,
+    "price_rm": "RM 1799",
     "description": "Aura Keyless Elite combines a backlit keypad and smartphone access for flexible entry control. It uses strong encryption technology to protect access points, providing a reliable and secure alternative to traditional locks."
   },
   {
     "product_id": "P006",
     "product_name": "Lumina Circadian",
+    "image": "Lumina.jpg",
     "category": "Lifestyle",
-    "price_rm": 499,
+    "price_rm": "RM 499",
     "description": "Lumina Circadian is a smart lighting system designed to mimic natural daylight cycles. By adjusting brightness and color temperature throughout the day, it supports better sleep patterns and helps users wake up feeling refreshed."
   },
   {
     "product_id": "P007",
     "product_name": "ChefBot Scale",
+    "image": "ChefBot.jpg",
     "category": "Lifestyle",
-    "price_rm": 349,
+    "price_rm": "RM 349",
     "description": "ChefBot Scale is an AI-powered kitchen scale that measures ingredient weight and suggests recipes based on available items. It simplifies meal planning and improves cooking accuracy for both beginners and experienced users."
   },
   {
     "product_id": "P008",
     "product_name": "VocaMirror",
+    "image": "VocaMirror.jpg",
     "category": "Lifestyle",
-    "price_rm": 2199,
+    "price_rm": "RM 2199",
     "description": "VocaMirror is a smart mirror that displays daily schedules, weather updates, and health information while in use. Its sleek display disappears when turned off, blending seamlessly into modern living spaces."
   },
   {
     "product_id": "P009",
     "product_name": "SleepMetrics Pad",
+    "image": "mattress.jpg",
     "category": "Lifestyle",
-    "price_rm": 1499,
+    "price_rm": "RM 1499",
     "description": "SleepMetrics Pad is a thin, non-intrusive sleep monitoring device placed under the mattress. It tracks sleep cycles, heart rate, and breathing patterns, providing detailed sleep reports without requiring wearable devices."
   },
   {
     "product_id": "P010",
     "product_name": "SetLink Smart Feeder",
+    "image": "pet.jpg",
     "category": "Lifestyle",
-    "price_rm": 749,
+    "price_rm": "RM 749",
     "description": "SetLink Smart Feeder uses AI recognition to identify individual pets and dispense precise food portions. It tracks feeding habits, supports multi-pet households, and helps pet owners manage nutrition efficiently."
   },
   {
     "product_id": "P011",
     "product_name": "SolarOptimist AI",
+    "image": "solar.png",
     "category": "Energy & Environment",
-    "price_rm": 4500,
+    "price_rm": "RM 4500",
     "description": "SolarOptimist AI is an intelligent solar energy management system that predicts energy production and household usage. By integrating weather data and usage patterns, it optimizes battery storage and improves energy independence."
   },
   {
     "product_id": "P012",
     "product_name": "Aura Humidity Guard",
+    "image": "humidity.jpg",
     "category": "Energy & Environment",
-    "price_rm": 249,
+    "price_rm": "RM 249",
     "description": "Aura Humidity Guard monitors indoor moisture levels to help prevent mold and mildew growth. It provides early alerts when humidity rises, protecting both home structure and indoor air quality."
   },
   {
     "product_id": "P013",
     "product_name": "PureAir Sentinel",
+    "image": "air.jpg",
     "category": "Energy & Environment",
-    "price_rm": 1199,
+    "price_rm": "RM 1199",
     "description": "PureAir Sentinel continuously monitors air quality by detecting dust, pollen, and carbon dioxide levels. It delivers real-time insights and alerts to help maintain a healthier indoor environment."
   },
   {
     "product_id": "P014",
     "product_name": "OmniTemp Zone Valve",
+    "image": "OmniTemp.jpg",
     "category": "Energy & Environment",
-    "price_rm": 359,
+    "price_rm": "RM 359",
     "description": "OmniTemp Zone Valve enables room-by-room temperature control for improved comfort and energy efficiency. Users can schedule different temperatures for each area, reducing energy waste in unused spaces."
   },
   {
     "product_id": "P015",
     "product_name": "ThermalTint Adaptive Glass",
+    "image": "glass.jpg",
     "category": "Energy & Environment",
-    "price_rm": 2999,
+    "price_rm": "RM 2999",
     "description": "ThermalTint Adaptive Glass automatically adjusts window opacity based on sunlight and heat levels. It blocks UV rays, reduces indoor temperature, and integrates with smart climate systems to enhance energy efficiency."
   },
   {
     "product_id": "P016",
     "product_name": "EcoFlow Thermostat",
+    "image": "Thermostat.jpg",
     "category": "Appliances",
-    "price_rm": 899,
+    "price_rm": "RM 899",
     "description": "EcoFlow Thermostat learns user routines to automatically adjust indoor temperatures. It balances comfort and energy savings by optimizing cooling and heating based on daily activity patterns."
   },
   {
     "product_id": "P017",
     "product_name": "SmartGrid Plug",
+    "image": "Plug.jpg",
     "category": "Appliances",
-    "price_rm": 129,
+    "price_rm": "RM 129",
     "description": "SmartGrid Plug converts standard power outlets into smart monitoring points. It tracks real-time energy consumption, helping users identify power-hungry devices and reduce electricity waste."
   },
   {
     "product_id": "P018",
     "product_name": "Zenith RoboVac Pro",
+    "image": "robovac.jpg",
     "category": "Appliances",
-    "price_rm": 3299,
+    "price_rm": "RM 3299",
     "description": "Zenith RoboVac Pro is an autonomous robot vacuum equipped with laser mapping technology. It cleans efficiently and empties its dustbin automatically, minimizing manual maintenance."
   },
   {
     "product_id": "P019",
     "product_name": "OmniVault Smart Hub",
+    "image": "Hub.jpg",
     "category": "Appliances",
-    "price_rm": 8799,
+    "price_rm": "RM 8799",
     "description": "OmniVault Smart Hub is a smart refrigerator system with internal vision technology that tracks stored food. It sends expiration alerts and suggests recipes to reduce waste and improve meal planning."
   },
   {
     "product_id": "P020",
     "product_name": "SenseLoad Washer",
+    "image": "Washer.jpg",
     "category": "Appliances",
-    "price_rm": 4299,
+    "price_rm": "RM 4299",
     "description": "SenseLoad Washer automatically detects laundry load size and fabric type to optimize water and detergent usage. It delivers efficient cleaning while conserving energy and extending fabric lifespan."
   }
 ]

@@ -17,7 +17,22 @@ function Products() {
             .then((data) => setProducts(data)) // Save the JSON data into our state
             .catch((error) => console.error('Error:', error));
     }, []);
+    // Helper function to get the correct image path
+    const getImagePath = (imagePath) => {
+        if (!imagePath) {
+            return null; // Return null if no image path provided
+        }
 
+        // Remove leading slash and "image/" if present
+        const cleanPath = imagePath.replace(/^\/?(image\/)?/, '');
+
+        try {
+            return require(`../image/${cleanPath}`);
+        } catch (error) {
+            console.error(`Image not found: ${cleanPath}`);
+            return null;
+        }
+    };
     return (
         <div className="products-container">
             <h2 className="products-title">Our Product Catalog</h2>
@@ -31,14 +46,28 @@ function Products() {
                     <p>Loading products...</p>
                 ) : (
                     products.map(product => (
-                        <div key={product.id} className="product-card">
-                            <img src={product.image} alt={product.name} className="product-image" />
-                            <h3>{product.name}</h3>
+                        <div key={product.product_id} className="product-card">
+                            <div className="product-image-container">
+                                {getImagePath(product.image) ? (
+                                    <img
+                                        src={getImagePath(product.image)}
+                                        alt={product.product_name}
+                                        className="product-image"
+                                    />
+                                ) : (
+                                    <div className="product-image-placeholder">
+                                        No Image
+                                    </div>
+                                )}
+                            </div>
+                            <div className="product-info">
+                            <h3>{product.product_name}</h3>
                             <p className="product-desc">{product.description}</p>
-                            <p className="product-price">{product.price}</p>
+                            <p className="product-price">{product.price_rm}</p>
                             <button className="product-button">
                                 View Details
                             </button>
+                        </div>
                         </div>
                     ))
                 )}
