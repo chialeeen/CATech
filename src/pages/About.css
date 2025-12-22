@@ -1,23 +1,185 @@
 .about-container {
-    /* Your new background color */
     background-color: #fcfaff;
-
-    /* Original Sizing */
-    padding: 40px;
-    text-align: center;
-
-    /* Ensures the background fills the screen if content is short */
     min-height: 60vh;
+    padding: 40px 5%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.about-content-section {
-    /* Original Sizing */
-    margin: 20px 0;
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
-/* Keeps headers looking consistent with your original default sizes */
-.about-container h2 {
+.about-header h2 {
     margin-top: 0;
-    color: #6200ea; /* Optional: CATech Purple */
+    color: #6200ea;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Photo Section Styles */
+.about-photo-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-photo-frame {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(98, 0, 234, 0.1);
+    border: 3px solid #e7ddff;
+    margin-bottom: 20px;
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-caption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Button Navigation Styles */
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.about-button {
+    padding: 12px 30px;
+    background-color: white;
+    color: #6200ea;
+    border: 2px solid #6200ea;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    text-align: center;
+}
+
+.about-button:hover {
+    background-color: #f3e5ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(98, 0, 234, 0.2);
+}
+
+.about-button.active {
+    background-color: #6200ea;
+    color: white;
+    box-shadow: 0 5px 15px rgba(98, 0, 234, 0.3);
+}
+
+/* Content Section Styles */
+.about-content-section {
+    background: linear-gradient(135deg, rgba(98, 0, 234, 0.05), rgba(98, 0, 234, 0.1));
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #6200ea;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.about-content-section h3 {
+    color: #6200ea;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.about-content-section p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* All sections use same style - removed individual section styles */
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.values-list li:before {
+    content: "•";
+    color: #6200ea;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.values-list strong {
+    color: #6200ea;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-header h2 {
+        font-size: 2rem;
+    }
+
+    .about-content-section {
+        padding: 20px;
+    }
+
+    .about-content-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-content-section p {
+        color: #555;
+        line-height: 1.7;
+        margin: 0;
+        font-size: 1.1rem;
+        white-space: pre-line;
+    }
 }
