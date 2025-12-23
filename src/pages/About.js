@@ -7,23 +7,21 @@ function About() {
     const sections = {
         mission: {
             title: "Our Mission",
-            content: `At CATech, our mission is to revolutionize Malaysian homes through accessible, intelligent technology. We're committed to designing and manufacturing smart home devices that simplify daily routines, enhance security, and improve energy efficiency—all at prices that make advanced home automation attainable for every Malaysian family.
+            content: `At CATech, our mission is to transform the way people live through intelligent technology. We are committed to designing and manufacturing smart home devices that simplify daily routines, enhance security, and improve energy efficiency, making everyday life easier.
 
-            We believe that technology should work for you, not the other way around. That's why we focus on creating intuitive, user-friendly devices that integrate seamlessly into your lifestyle, providing practical solutions to real-world challenges faced in Malaysian households.`
+            We believe that technology should work for you, not the other way around. That's why we focus on creating intuitive, user-friendly devices that integrate seamlessly into everyday life, delivering practical solutions to real-world challenges.`
         },
         vision: {
             title: "Our Vision",
-            content: `We envision a future where every home in Malaysia is a smart home—where technology serves as an invisible but indispensable assistant in daily life. By 2030, CATech aims to be Southeast Asia's leading innovator in smart home technology, setting the standard for quality, reliability, and affordability in the IoT industry.
+            content: `We envision a future where every home is a smart home, where technology serves as an invisible but indispensable assistant in daily life. By 2030, CATech aims to be a worldwide leading innovator in smart home technology, setting the standard for quality, reliability, and affordability in the IoT industry.
 
-            Our goal is to create ecosystems where all home devices communicate intelligently, learning from user habits to optimize comfort, security, and energy usage automatically. We're building toward a Malaysia where smart living is the norm, not the exception.`
+            Our goal is to create ecosystems where all home devices communicate intelligently, learning from user habits to automatically optimize comfort, security, and energy usage. We are building a world where smart living is the norm, not the exception.`
         },
         story: {
             title: "Our Story",
-            content: `CATech was founded in 2023 by four USM Computer Science graduates who shared a common frustration: smart home technology was either prohibitively expensive or disappointingly limited for Malaysian consumers. While working on their final-year project, they discovered that existing solutions failed to address Malaysia's unique climate, housing layouts, and lifestyle needs.
+            content: `CATech was founded in 2023 by four USM Computer Science graduates with a vision to make smart home technology accessible, practical, and seamlessly integrated into daily life. It began with a simple smart plug prototype in their university lab, and months of testing confirmed that people wanted smart home solutions designed for real-life needs.
 
-            Starting with a simple smart plug prototype built in their university lab in George Town, Penang, the team spent months testing and refining their designs with local families. The overwhelming positive response confirmed their hypothesis: Malaysians wanted smart home technology, but needed solutions designed specifically for them.
-
-            Today, CATech operates from our Penang headquarters, where we design, manufacture, and distribute a growing range of IoT devices. From our initial smart plugs and lighting systems, we've expanded to include security cameras, climate controllers, and energy monitors—all engineered for Malaysian conditions and budgets.`
+            Today, CATech designs, manufactures, and distributes a growing range of IoT devices from smart plugs and lighting systems to security cameras and energy monitors, making homes smarter, safer, and more efficient.`
         },
         values: {
             title: "Our Values",
@@ -33,28 +31,20 @@ function About() {
 
     const valuesList = [
         {
-            title: "Malaysian-First Design",
-            description: "Every CATech product is engineered specifically for Malaysia's climate, housing architecture, and lifestyle. We test extensively in local conditions to ensure reliability during power fluctuations, high humidity, and tropical weather."
-        },
-        {
             title: "Affordable Innovation",
-            description: "We believe advanced technology should be accessible. By manufacturing locally and optimizing our supply chain, we offer products at 40-60% lower prices than imported alternatives without compromising on core features or quality."
+            description: "We offer products at 20% lower prices without compromising on quality."
         },
         {
-            title: "User-Centric Simplicity",
-            description: "Technology should simplify life, not complicate it. Our devices feature intuitive interfaces, straightforward installation, and seamless integration—no technical expertise required to transform your home."
+            title: "User Simplicity",
+            description: "Our devices are intuitive, easy to install, and seamlessly integrate into daily life."
         },
         {
             title: "Quality Assurance",
-            description: "Every CATech device undergoes 200+ hours of testing in simulated Malaysian conditions. We back our products with a 3-year warranty and provide lifetime technical support through our local customer service team."
+            description: "Our devices undergo extensive testing before sale. We provide a 3-year warranty and lifetime technical support."
         },
         {
             title: "Sustainable Innovation",
-            description: "Our smart energy devices help households reduce electricity consumption by 20-35%. We're committed to eco-friendly manufacturing practices and packaging, contributing to Malaysia's sustainability goals."
-        },
-        {
-            title: "Community Partnership",
-            description: "We collaborate with Malaysian universities for R&D, source components locally when possible, and hire talent from across the country to build Malaysia's IoT ecosystem from the ground up."
+            description: "Our devices reduce electricity consumption by 20-35%, and eco-friendly manufacturing and packaging contribute to global sustainability goals."
         }
     ];
 
@@ -62,7 +52,7 @@ function About() {
         <div className="about-container">
             <div className="about-header">
                 <h2>About CATech</h2>
-                <p>Manufacturing smart home devices that transform Malaysian living through intelligent technology</p>
+                <p>Manufacturing and selling smart home devices that enhance everyday living through intelligent technology</p>
             </div>
 
             {/* Photo Section */}
@@ -74,7 +64,7 @@ function About() {
                         className="about-photo"
                     />
                 </div>
-                <p className="photo-caption">CATech - START LIFE, BETTER HOME</p>
+                <p className="photo-caption">CATech - SMART LIFE, BETTER HOME</p>
             </div>
 
             {/* Navigation Buttons */}
