@@ -1,24 +1,28 @@
+/* 1. Page Container */
 .team-container {
-    background-color: #fcfaff; /* Lavender White background for the page */
+    background-color: #fcfaff;
     min-height: 100vh;
-    padding: 60px 10px; /* Reduced side padding to help 4-fit */
+    padding: 60px 5%; /* Changed to % so it has breathing room on mobile */
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
 }
 
+/* 2. Header Section */
 .team-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-/* GRADIENT PURPLE TITLE (渐变色) */
 .gradient-title {
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
-    background: linear-gradient(to right, #9d72ff, #7952B3, #2d0d52);
+    background: linear-gradient(to right, #8227ff, #6200ea, #4500ab);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;
+    color: #6200ea;
+    display: inline-block;
 }
 
 .team-tagline {
@@ -26,20 +30,22 @@
     color: #7952B3;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 10px;
+    display: block; /* Ensures it sits on its own line */
 }
 
-/* FORCING 4 IN ONE LINE */
+/* 3. The Responsive Grid Logic */
 .team-grid {
     display: grid;
-    /* This line forces 4 equal columns without wrapping */
+    /* Default: 4 columns for Desktop */
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px; /* Tightened gap to fit on one screen */
-    max-width: 1400px; /* Wider container for 4 people */
+    gap: 20px;
+    max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
-/* INTERACTIVE POP-UP CARD */
+/* 4. Card Styling */
 .team-card {
     background: #ffffff;
     border-radius: 15px;
@@ -52,25 +58,26 @@
     flex-direction: column;
 }
 
-/* MOUSE HOVER POP-UP EFFECT */
 .team-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 15px 35px rgba(121, 82, 179, 0.2);
     border-color: #7952B3;
 }
 
+/* 5. Image Handling - Fixed the "Width" Issue */
 .member-image-box {
-    width: 325px;
-    height: 380px;
+    width: 100%; /* CHANGED: Was fixed 325px, now fluid to fit the card */
+    height: 350px; /* Fixed height ensures all heads align perfectly */
     overflow: hidden;
     background-color: #f8f9fa;
+    position: relative;
 }
 
 .member-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
+    object-fit: cover; /* Prevents stretching */
+    object-position: top center; /* Focuses on faces */
     transition: transform 0.5s ease;
 }
 
@@ -78,8 +85,10 @@
     transform: scale(1.05);
 }
 
+/* 6. Text Content */
 .member-info-box {
-    padding: 20px 10px; /* Smaller padding for 4-column fit */
+    padding: 25px 15px; /* Added more padding for aesthetics */
+    flex-grow: 1; /* Pushes content to fill space evenly */
 }
 
 .badge {
@@ -89,24 +98,60 @@
     border-radius: 15px;
     font-size: 0.7rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .member-name {
-    font-size: 1.1rem; /* Slightly smaller font for layout */
+    font-size: 1.2rem; /* Slightly larger for readability */
     color: #2d0d52;
-    margin: 12px 0 3px;
+    margin: 15px 0 5px;
     font-weight: 700;
 }
 
 .member-core-role {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #555;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .member-desc {
-    font-size: 0.75rem; /* Reduced for better fit */
+    font-size: 0.8rem;
     color: #777;
-    line-height: 1.4;
+    line-height: 1.5;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES (The Fix)
+   ========================================= */
+
+/* Tablet View (iPad, Small Laptops) -> 2 Columns */
+@media (max-width: 1100px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 grid */
+        max-width: 800px; /* Limits width so cards don't get too fat */
+    }
+
+    .gradient-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile View (Phones) -> 1 Column */
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Switch to single column stack */
+    }
+
+    .team-container {
+        padding: 40px 20px;
+    }
+
+    .gradient-title {
+        font-size: 2rem;
+    }
+
+    .member-image-box {
+        height: 320px; /* Slightly shorter image on phones */
+    }
 }

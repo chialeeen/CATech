@@ -18,9 +18,21 @@ function Header() {
     const logoStyle = {
         fontSize: '1.5rem',
         fontWeight: 'bold',
+        textDecoration: 'none',
+        background: 'linear-gradient(to right, #8227ff, #6200ea, #4500ab)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        color: '#6200ea',
+        display: 'inline-block',
+    };
+
+    /*
+    const logoStyle = {
+        fontSize: '1.5rem',
+        fontWeight: 'bold',
         color: '#6200ea', // USM Purple
         textDecoration: 'none',
-    };
+    }; */
 
     const navLinksStyle = {
         display: 'flex',

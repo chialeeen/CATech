@@ -15,7 +15,8 @@
     padding: 15px 45px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #7952B3; /* Your signature purple */
+    /* background-color: #7952B3; */
+    background: linear-gradient(to right, #9d72ff, #7952B3, #2d0d52);
     color: white;
     border: none;
     border-radius: 50px;
@@ -24,13 +25,12 @@
     text-transform: uppercase;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     margin-top: 20px;
-    /* Smooth "Pop-up" transition */
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .explore-button:hover, .home-button:hover {
     background-color: #9067c6;
-    transform: translateY(-5px); /* Interactive lift effect */
+    transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(121, 82, 179, 0.4);
 }
 

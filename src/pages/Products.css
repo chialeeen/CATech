@@ -1,14 +1,20 @@
 .products-container {
-    background-color: #fcfaff; /* Subtle lavender-tinted white */
-    min-height: 60vh;          /* Matches your preference to keep footer visible */
+    background-color: #fcfaff;
+    min-height: 60vh;
     padding: 40px 5%;
     box-sizing: border-box;
 }
 
 .products-title {
     text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(to right, #8227ff, #6200ea, #4500ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
     color: #6200ea;
-    margin-top: 0;
 }
 
 .products-subtitle {
@@ -26,7 +32,7 @@
 
 /* Individual Card Styling */
 .product-card {
-    background-color: #faeafa; /* White cards pop against the lavender bg */
+    background: linear-gradient(135deg, rgba(98, 0, 234, 0.05), rgba(98, 0, 234, 0.1));
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -42,11 +48,6 @@
     transform: translateY(-5px); /* Slight lift on hover for better GUI feedback */
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
-
-/*.product-image {
-    width: 100%;
-    border-radius: 5px;
-}*/
 
 .product-image-container {
     width: 100%;
@@ -93,7 +94,7 @@
 
 .product-price {
     font-weight: bold;
-    color: #EA7EA3;
+    color: #4500ab;
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 16px;
@@ -101,7 +102,7 @@
 
 /* Product Button Styling */
 .product-button {
-    background-color: #7381BE;
+    background-color: #6200ea;
     color: white;
     border: none;
     padding: 12px 20px;
