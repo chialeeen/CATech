@@ -148,7 +148,7 @@
     "product_name": "OmniVault Smart Hub",
     "image": "Hub.jpg",
     "category": "Appliances",
-    "price_rm": "RM 8799",
+    "price_rm": "RM 6799",
     "description": "OmniVault Smart Hub is a smart refrigerator system with internal vision technology that tracks stored food. It sends expiration alerts and suggests recipes to reduce waste and improve meal planning."
   },
   {
@@ -156,7 +156,7 @@
     "product_name": "SenseLoad Washer",
     "image": "Washer.jpg",
     "category": "Appliances",
-    "price_rm": "RM 4299",
+    "price_rm": "RM 2299",
     "description": "SenseLoad Washer automatically detects laundry load size and fabric type to optimize water and detergent usage. It delivers efficient cleaning while conserving energy and extending fabric lifespan."
   }
 ]
