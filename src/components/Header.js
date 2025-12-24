@@ -46,6 +46,14 @@ function Header() {
         fontSize: '1rem',
     };
 
+    const cartTextStyle = {
+        position: 'relative',
+        textDecoration: 'none',
+        color: '#333',
+        fontWeight: '500',
+        fontSize: '1rem',
+    };
+
     // 2. Apply the specific variables to the elements below
     return (
         <nav style={headerContainerStyle}>
@@ -54,6 +62,9 @@ function Header() {
             </Link>
 
             <div className="nav-links-container" style={navLinksStyle}>
+                <div style={cartTextStyle}>
+                    View Cart
+                </div>
                 <Link to="/" style={linkStyle}>Home</Link>
                 <Link to="/products" style={linkStyle}>Products</Link>
                 <Link to="/about" style={linkStyle}>About</Link>
