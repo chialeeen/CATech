@@ -7,51 +7,19 @@ function Products() {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
 
-    // Smart shuffle function - distributes categories evenly to avoid same categories side by side
     const smartShuffle = (array) => {
-        // Group products by category
-        const byCategory = {};
-        array.forEach(item => {
-            if (!byCategory[item.category]) {
-                byCategory[item.category] = [];
-            }
-            byCategory[item.category].push(item);
-        });
-
-        // Shuffle each category's products
-        Object.keys(byCategory).forEach(category => {
-            const arr = byCategory[category];
-            for (let i = arr.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-            }
-        });
-
-        // Interleave products from different categories
-        const result = [];
-        const categories = Object.keys(byCategory);
-        let maxLength = Math.max(...categories.map(cat => byCategory[cat].length));
-
-        for (let i = 0; i < maxLength; i++) {
-            categories.forEach(category => {
-                if (byCategory[category][i]) {
-                    result.push(byCategory[category][i]);
-                }
-            });
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
-
-        return result;
+        return shuffled;
     };
 
     // 2. Load the data from the public folder when the page opens
     useEffect(() => {
         fetch('/product.json') // Looks directly into the public folder
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Failed to load product data');
-                }
-                return response.json();
-            })
+            .then((response) => response.json())
             .then((data) =>
                 {
                     const shuffledData = smartShuffle(data);
@@ -59,21 +27,17 @@ function Products() {
                 })// Save the JSON data into our state
             .catch((error) => console.error('Error:', error));
     }, []);
-    // Helper function to get the correct image path
+
+    //function to get image from public folder
     const getImagePath = (imagePath) => {
-        if (!imagePath) {
-            return null; // Return null if no image path provided
-        }
+        if (!imagePath) return '/image/placeholder.png';
 
-        // Remove leading slash and "image/" if present
-        const cleanPath = imagePath.replace(/^\/?(image\/)?/, '');
-
-        try {
-            return require(`../image/${cleanPath}`);
-        } catch (error) {
-            console.error(`Image not found: ${cleanPath}`);
-            return null;
+        // If path already starts with /image/, use as is
+        if (imagePath.startsWith('/image/')) {
+            return imagePath;
         }
+        // Otherwise, add /image/ prefix
+        return `/image/${imagePath}`;
     };
     // Get unique categories from products
     const categories = ['All', ...new Set(products.map(p => p.category))];
@@ -83,7 +47,6 @@ function Products() {
         const matchesSearch = product.product_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             product.description.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
-
         return matchesSearch && matchesCategory;
     });
 
@@ -91,7 +54,7 @@ function Products() {
         <div className="products-container">
             <h2 className="products-title">Our Product Catalog</h2>
             <p className="products-subtitle">
-                Discover our range of IoT solutions designed for the modern Malaysian home.
+                Discover our range of IoT solutions designed for the modern homes worldwide.
             </p>
             {/* Search and Filter Section */}
             <div className="filter-section">
@@ -134,17 +97,14 @@ function Products() {
                     filteredProducts.map(product => (
                         <div key={product.product_id} className="product-card">
                             <div className="product-image-container">
-                                {getImagePath(product.image) ? (
-                                    <img
-                                        src={getImagePath(product.image)}
-                                        alt={product.product_name}
+                                <img
+                                    src={getImagePath(product.image)}
+                                    alt={product.product_name}
                                         className="product-image"
+                                        onError={(e) => {
+                                            e.target.src = '/image/placeholder.png';
+                                        }}
                                     />
-                                ) : (
-                                    <div className="product-image-placeholder">
-                                        No Image
-                                    </div>
-                                )}
                             </div>
                             <div className="product-info">
                                 <h3>{product.product_name}</h3>
@@ -153,6 +113,9 @@ function Products() {
                                 <p className="product-price">{product.price_rm}</p>
                                 <button className="product-button">
                                     View Details
+                                </button>
+                                <button className="add-to-cart-button">
+                                    Add to Cart
                                 </button>
                             </div>
                         </div>
