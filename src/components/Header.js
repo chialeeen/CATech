@@ -62,11 +62,11 @@ function Header() {
             </Link>
 
             <div className="nav-links-container" style={navLinksStyle}>
+                <Link to="/" style={linkStyle}>Home</Link>
+                <Link to="/products" style={linkStyle}>Products</Link>
                 <div style={cartTextStyle}>
                     View Cart
                 </div>
-                <Link to="/" style={linkStyle}>Home</Link>
-                <Link to="/products" style={linkStyle}>Products</Link>
                 <Link to="/about" style={linkStyle}>About</Link>
                 <Link to="/team" style={linkStyle}>Team</Link>
             </div>
