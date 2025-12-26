@@ -1,34 +1,27 @@
-/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
 
-/* 1. Reset all elements to remove default browser gaps */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* 2. Fix the white border while allowing scrolling */
 html, body, #root {
     margin: 0 !important;
     padding: 0 !important;
     width: 100%;
-    /* Use min-height so the page can grow if content is long */
     min-height: 100vh;
-    /* Prevent horizontal white slivers without breaking vertical scroll */
     overflow-x: hidden;
 }
 
-/* 3. Global Styling */
 body {
-    background-color: #ffffff; /* Default for pages like Products and Team */
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* 4. Ensure the root container fills the space for the background image */
 #root {
     display: flex;
     flex-direction: column;
