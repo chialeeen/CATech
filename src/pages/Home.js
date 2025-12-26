@@ -45,8 +45,8 @@ function Home() {
                     <iframe
                         width="350"
                         height="200"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                        title="CATech Promo Placeholder"
+                        src="https://www.youtube.com/embed/QUDYbuuHv2w?si=SEItwPVVw0GgFoka"
+                        title="CATech Company Introduction"
                         style={{ borderRadius: '12px', border: '2px solid #9d72ff' }}
                     />
                 </div>
