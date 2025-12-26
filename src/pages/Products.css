@@ -14,7 +14,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;
-    color: #6200ea;
+    color: #6200ea; /*fallback for older browsers*/
 }
 
 .products-subtitle {
@@ -23,14 +23,14 @@
     color: #555;
 }
 
-/* The Grid Layout */
+/*Grid Layout */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
-/* Individual Card Styling */
+/* product card styling, default style */
 .product-card {
     background: linear-gradient(135deg, rgba(98, 0, 234, 0.05), rgba(98, 0, 234, 0.1));
     border: 1px solid #ddd;
@@ -45,7 +45,7 @@
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover for better GUI feedback */
+    transform: translateY(-5px); /* slight lift on hover*/
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
@@ -100,7 +100,7 @@
     margin-bottom: 16px;
 }
 
-/*Product Button Styling*/
+/*button styling*/
 .product-button {
     background-color: white;
     color: #6200ea;
@@ -144,7 +144,7 @@
     box-shadow: 0 4px 8px rgba(98, 0, 234, 0.3);
 }
 
-/* Search and Filter Section */
+/* search and filter */
 .filter-section {
     max-width: 1000px;
     margin: 0 auto 30px;
@@ -170,6 +170,7 @@
 
 .search-input:focus {
     border-color: #6200ea;
+    /* box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.1); */
 }
 
 .category-filters {
@@ -225,7 +226,7 @@
     margin-bottom: 10px;
 }
 
-/* Responsive adjustments */
+/* mobile responsive */
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-    // 1. Define specific style objects
+    //define specific style objects
     const headerContainerStyle = {
         display: 'flex',
         justifyContent: 'space-between',
@@ -54,7 +54,7 @@ function Header() {
         fontSize: '1rem',
     };
 
-    // 2. Apply the specific variables to the elements below
+    //apply the specific variables to the elements below
     return (
         <nav style={headerContainerStyle}>
             <Link to="/" style={logoStyle}>

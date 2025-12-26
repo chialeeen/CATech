@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'; // Added hooks
+import React, { useState, useEffect } from 'react';
 import './Products.css';
 
 function Products() {
-    // 1. Create a state to hold the data
+    //create a state to hold data
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
-
+    //shuffle products on reload
     const smartShuffle = (array) => {
         const shuffled = [...array];
         for (let i = shuffled.length - 1; i > 0; i--) {
@@ -16,15 +16,15 @@ function Products() {
         return shuffled;
     };
 
-    // 2. Load the data from the public folder when the page opens
+    //fetch products
     useEffect(() => {
-        fetch('/product.json') // Looks directly into the public folder
+        fetch('/product.json') //looks directly into the public folder
             .then((response) => response.json())
             .then((data) =>
                 {
                     const shuffledData = smartShuffle(data);
                     setProducts(shuffledData);
-                })// Save the JSON data into our state
+                })//save JSON data into our state
             .catch((error) => console.error('Error:', error));
     }, []);
 
@@ -32,17 +32,17 @@ function Products() {
     const getImagePath = (imagePath) => {
         if (!imagePath) return '/image/placeholder.png';
 
-        // If path already starts with /image/, use as is
+        //already has right prefix
         if (imagePath.startsWith('/image/')) {
             return imagePath;
         }
-        // Otherwise, add /image/ prefix
+        // else add /image/ prefix
         return `/image/${imagePath}`;
     };
-    // Get unique categories from products
+    //unique categories from products
     const categories = ['All', ...new Set(products.map(p => p.category))];
 
-    // Filter products based on search and category
+    //search based on name and description
     const filteredProducts = products.filter(product => {
         const matchesSearch = product.product_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             product.description.toLowerCase().includes(searchTerm.toLowerCase());
@@ -86,7 +86,7 @@ function Products() {
                 <p>Showing {filteredProducts.length} of {products.length} products</p>
             </div>
             <div className="products-grid">
-                {/* 3. If the data is still loading, show a message */}
+                {/*if the data is still loading, show a message */}
                 {products.length === 0 ? (
                     <p>Loading products...</p>
                 ) : filteredProducts.length === 0 ? (
