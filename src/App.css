@@ -1,4 +1,4 @@
-/* 1. Global Application Container */
+/* Container */
 .App {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-/* 2. Unified Button Styling - Used in Home and Products */
+/* Button Styling */
 .explore-button, .home-button {
     padding: 15px 45px;
     font-size: 1rem;
@@ -31,19 +31,19 @@
     box-shadow: 0 12px 25px rgba(121, 82, 179, 0.4);
 }
 
-/* 3. Helper class for elegant white-background sections */
+/* Helper class */
 .section-white {
     background-color: #ffffff;
     padding: 60px 20px;
     width: 100%;
 }
 
-/* 4. Global Typography for CATech brand */
+/* Global Typography for CATech brand */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* 5. Responsive Fixes */
+/* Responsive */
 @media (max-width: 600px) {
     .nav-links-container {
         gap: 10px !important;
