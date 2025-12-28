@@ -28,7 +28,9 @@ function Header() {
 
     const navLinksStyle = {
         display: 'flex',
-        gap: '20px',
+        gap: '15px',
+        flexWrap: 'wrap', // allows links to move to a second line if the screen is too narrow
+        justifyContent: 'flex-end',
     };
 
     const linkStyle = {
