@@ -43,8 +43,8 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 350px; /* Adjust this number to your liking */
-    margin: 0 auto;
+    max-width: 350px;
+    margin: 0 auto;  /* Centers the card if it's alone */
 }
 
 .product-card:hover {
