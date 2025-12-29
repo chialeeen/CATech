@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
-    //define specific style objects
+    // define specific style objects
     const headerContainerStyle = {
         display: 'flex',
         justifyContent: 'space-between',
@@ -26,17 +26,11 @@ function Header() {
         display: 'inline-block',
     };
 
-    /*
-    const logoStyle = {
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
-        color: '#6200ea', // USM Purple
-        textDecoration: 'none',
-    }; */
-
     const navLinksStyle = {
         display: 'flex',
-        gap: '20px',
+        gap: '15px',
+        flexWrap: 'wrap', // allows links to move to a second line if the screen is too narrow
+        justifyContent: 'flex-end',
     };
 
     const linkStyle = {
@@ -54,7 +48,7 @@ function Header() {
         fontSize: '1rem',
     };
 
-    //apply the specific variables to the elements below
+    // apply the specific variables to the elements below
     return (
         <nav style={headerContainerStyle}>
             <Link to="/" style={logoStyle}>

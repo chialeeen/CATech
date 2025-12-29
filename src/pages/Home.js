@@ -6,7 +6,6 @@ function Home() {
     const navigate = useNavigate();
 
     const backgroundLayer = {
-        /* This forces the image to cover every pixel without moving */
         position: 'fixed',
         top: 0,
         left: 0,
@@ -32,10 +31,10 @@ function Home() {
 
     return (
         <div style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
-            {/* 1. The Background (Glued to edges) */}
+            {/* 1. The Background */}
             <div style={backgroundLayer} />
 
-            {/* 2. Your Content */}
+            {/* 2. Content */}
             <div style={contentLayer}>
                 <h1 className="home-title fade-in-title">CATech</h1>
                 <p className="home-tagline fade-in-tagline">Smart Life, Better Home</p>
