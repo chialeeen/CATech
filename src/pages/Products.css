@@ -26,8 +26,9 @@
 /*Grid Layout */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
+    justify-content: center;
 }
 
 /* product card styling, default style */
@@ -42,6 +43,8 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px; /* Adjust this number to your liking */
+    margin: 0 auto;
 }
 
 .product-card:hover {
