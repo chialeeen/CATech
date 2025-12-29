@@ -16,7 +16,7 @@ function Products() {
         return shuffled;
     };
 
-    //fetch products
+    //fetch products from json file
     useEffect(() => {
         fetch('/product.json') //looks directly into the public folder
             .then((response) => response.json())
